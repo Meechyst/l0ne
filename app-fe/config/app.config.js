@@ -49,7 +49,7 @@
 
 
     satellizr.$inject = ['$authProvider'];
-    //credientals for social login
+    //credientals for registration/login
     function satellizr($authProvider) {
 
         $authProvider.facebook({
