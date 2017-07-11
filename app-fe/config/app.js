@@ -9,7 +9,7 @@
             'ngAnimate',
             'toastr',
             'ui.router',
-            //'satellizer',
+            'satellizer',
             'ngMaterial',
             'restangular',
             'angularMoment',
