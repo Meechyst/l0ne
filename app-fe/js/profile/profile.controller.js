@@ -1,11 +1,11 @@
-s(function(){
+(function(){
     'use strict';
 
-    angular.module('l0ne.settings').controller('SettingsController', SettingsController);
+    angular.module('l0ne.profile').controller('ProfileController', ProfileController);
 
-    SettingsController.$inject = ['$scope', '$auth','toastr','Account'];
+    ProfileController.$inject = ['$scope', '$auth','toastr','Account'];
 
-    function SettingsController($scope, $auth, toastr, Account){
+    function ProfileController($scope, $auth, toastr, Account){
         $scope.getProfile = function() {
             Account.getProfile()
                 .then(function(response) {

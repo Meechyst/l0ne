@@ -5,9 +5,9 @@
 
     function routes($stateProvider) {
         $stateProvider
-            .state('l0ne.profile', {
-                url: '/settings',
-                templateUrl: 'templates/profile.html',
+            .state('profile', {
+                url: '/profile',
+                templateUrl: '../templates/app-fe/js/profile/profile.html',
                 controller: 'ProfileController',
                 controllerAs: 'ProfileCtrl',
                 resolve: {

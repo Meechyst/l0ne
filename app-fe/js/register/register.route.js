@@ -5,9 +5,9 @@
 
     function routes($stateProvider){
         $stateProvider
-            .state('l0ne.signup', {
+            .state('register', {
                 url: '/signup',
-                templateUrl: 'templates/register.html',
+                templateUrl: '../templates/app-fe/js/register/register.html',
                 controller: 'RegisterController',
                 controllerAs: 'RegisterCtrl',
                 resolve: {

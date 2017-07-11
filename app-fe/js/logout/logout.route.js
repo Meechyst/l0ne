@@ -5,7 +5,7 @@
 
     function routes($stateProvider) {
         $stateProvider
-            .state('l0ne.logout', {
+            .state('logout', {
                 url: '/logout',
                 template: null,
                 controller: 'LogoutController',

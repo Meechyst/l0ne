@@ -5,9 +5,9 @@
 
     function routes($stateProvider){
         $stateProvider
-            .state('l0ne.login', {
+            .state('login', {
                 url: '/login',
-                templateUrl: 'templates/login.html',
+                templateUrl: '../templates/app-fe/js/login/login.html',
                 controller: 'LoginController',
                 controllerAs: 'LoginCtrl',
                 resolve: {

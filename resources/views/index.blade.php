@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html ng-app="doto" lang="en">
+<html ng-app="l0ne">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<<<<<<< HEAD
-    <title>L0ne | An Unsocial Network Project</title>
-=======
-    <title>L0ne | Unsocial Network</title>
->>>>>>> satellizer
+    <title>Satellizer</title>
     <link href="favicon.png" rel="shortcut icon">
     <link href="//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="{{url('css/app.2b3eb5b149c10b551042.css')}}" rel="stylesheet">
+    <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/animatecss/3.2.0/animate.css" rel="stylesheet">
+    <link href="{{mix('css/app.css')}}" rel="stylesheet">
     <link href="{{url('css/angular-toastr.css')}}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
 <body>
-<div ui-view="top"></div>
-<div class="container">
-    <div ui-view="content"></div>
+<div ng-controller="NavbarController" class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/"><i class="ion-ios7-pulse-strong"></i> Satellizer</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="/#/">Home</a></li>
+        <li ng-if="isAuthenticated()"><a href="/#/profile">Profile</a></li>
+    </ul>
+    <ul ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">
+        <li><a href="/#/login">Login</a></li>
+        <li><a href="/#/signup">Sign up</a></li>
+    </ul>
+    <ul ng-if="isAuthenticated()" class="nav navbar-nav pull-right">
+        <li><a href="/#/logout">Logout</a></li>
+    </ul>
 </div>
+
+<ui-view></ui-view>
+
 <script src="{{mix('js/vendor.js')}}"></script>
 <script src="{{mix('js/app.js')}}"></script>
 </body>

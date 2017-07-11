@@ -4,9 +4,9 @@
     routes.$inject = ['$stateProvider'];
     function routes($stateProvider) {
         $stateProvider
-            .state('l0ne.home', {
+            .state('home', {
                 url: '/',
-                templateUrl: 'templates/home.html',
+                templateUrl: '../templates/app-fe/js/home/home.html',
                 controller: 'HomeController'
             });
     }

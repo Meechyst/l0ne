@@ -6,20 +6,9 @@
     //base routing
     function routing($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/');
+        //$urlRouterProvider.otherwise('/');
 
-        $stateProvider.state('l0ne', {
-            abstract: true,
-            views: {
-                'top': {
-                    templateUrl: 'templates/navbar.html',
-                    controller: 'NavBarController'
-                },
-                'content': {
-                    template: '<ui-view></ui-view>'
-                }
-            }
-        });
+
     }
 
     angular.module('l0ne').config(routing);
