@@ -20,9 +20,9 @@
             'l0ne.directives',
             'l0ne.login',
             'l0ne.register',
+            'l0ne.sidebar',
             'l0ne.logout',
-            'l0ne.profile',
-            'l0ne.sidebar'
+            'l0ne.profile'
         ]
     );
 })();
