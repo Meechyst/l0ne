@@ -1,7 +1,7 @@
 s(function(){
     'use strict';
 
-    angular.module('doto.settings').controller('SettingsController', SettingsController);
+    angular.module('l0ne.settings').controller('SettingsController', SettingsController);
 
     SettingsController.$inject = ['$scope', '$auth','toastr','Account'];
 
