@@ -11,9 +11,9 @@
         $stateProvider.state('l0ne', {
             abstract: true,
             views: {
-                'side': {
-                    templateUrl: 'templates/sidebar.html',
-                    controller: 'SideBarController'
+                'top': {
+                    templateUrl: 'templates/navbar.html',
+                    controller: 'NavBarController'
                 },
                 'content': {
                     template: '<ui-view></ui-view>'
