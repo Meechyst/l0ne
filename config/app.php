@@ -2,6 +2,14 @@
 
 return [
 
+    'token_secret' => "supercalifragilisticexpialidocious",
+    'facebook_secret' => '39354c730f59d7838bd46c1e9cef094d',
+    'google_secret' => 'bH69FtAfHqrJ8JPL78WjTil4',
+    'twitter_key' => 'UR3GTsDFX1HDKQKRMsFtWFX4F',
+    'twitter_secret' => 'cuLUhXqKi8cDM0B8tWHTArLvIxgFXAt91VsyJvqZvHIPBfQ1Ca',
+
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -12,7 +20,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'l0ne'),
 
     /*
     |--------------------------------------------------------------------------
