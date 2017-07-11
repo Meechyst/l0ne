@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    angular.module('doto.logout').controller('LogoutController', LogoutController);
+    angular.module('l0ne.logout').controller('LogoutController', LogoutController);
 
     LogoutController.$inject = ['$location','$auth', 'toastr'];
 

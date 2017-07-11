@@ -1,10 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module('doto.navbar').controller('NavbarController', NavbarController);
+    angular.module('l0ne.navbar').controller('NavbarController', NavbarController);
 
     NavbarController.$inject = ['$scope', '$auth', 'Account'];
-
 
     function NavbarController($scope, $auth, Account) {
 
@@ -20,8 +19,6 @@
             $scope.user = user;
         });
 
-
     }
-
 
 })();
