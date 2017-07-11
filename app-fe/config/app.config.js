@@ -47,6 +47,37 @@
 
 
 
+
+    satellizr.$inject = ['$authProvider'];
+    //credientals for social login
+    function satellizr($authProvider) {
+
+        $authProvider.facebook({
+            clientId: '757867174376517'
+        });
+
+        $authProvider.google({
+            clientId: '143939498224-8lp6k2em87gjpvj5ef1h0kl9ool68of5.apps.googleusercontent.com'
+        });
+
+        $authProvider.instagram({
+            clientId: 'e1e1089a1b4646fa9298169af95fd93a'
+        });
+
+        $authProvider.oauth2({
+            name: 'foursquare',
+            url: '/auth/foursquare',
+            clientId: 'Foursquare Client ID',
+            redirectUri: window.location.origin,
+            authorizationEndpoint: 'https://foursquare.com/oauth2/authenticate'
+        });
+    }
+
+    angular.module('l0ne').config(satellizr);
+
+
+
+
     theme.$inject = ['$mdThemingProvider'];
 
     //configure theme hues
