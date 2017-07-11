@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
+use Firebase\JWT\JWT;
+use Illuminate\Support\Facades\Response;
+
 
 class UserController extends Controller
 {
