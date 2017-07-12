@@ -26,13 +26,13 @@
 
 
 
-    api.$inject = ['Restangular'];
+    routeConf.$inject = ['$urlRouterProvider'];
 
-    function api(Restangular) {
-        Restangular.setBaseUrl('/api');
+    function routeConf($urlRouterProvider) {
+        $urlRouterProvider.otherwise('/');
     }
 
-    angular.module('l0ne').run(api);
+    angular.module('l0ne').config(routeConf);
 
 
 
