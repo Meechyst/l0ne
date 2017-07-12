@@ -45633,7 +45633,7 @@ $templateCache.put("directives/toast/toast.html","<div class=\"{{toastClass}} {{
 
     var Config = (function () {
         function Config() {
-            this.baseUrl = '/';
+            this.baseUrl = '/api';
             this.loginUrl = '/auth/login';
             this.signupUrl = '/auth/signup';
             this.unlinkUrl = '/auth/unlink/';

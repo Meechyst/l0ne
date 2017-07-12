@@ -55,20 +55,20 @@ class UserController extends Controller
         return response()->json(['token' => $token]);
     }
 
-    public function checkUser(Request $request, $displayname)
-    {
-        //get all users
-        //get all emails
-        //get input data
-        //return true if given email is in the emails array
-
-        $db = array_flatten(User::get(['displayname'])->toArray()) ;
-        $result =  in_array($displayname, $db);
-        if($result) {
-            return Response::json(array('isUnique' => $result), 200);
-        }
-        else{
-            abort('404');
-        }
-    }
+//    public function checkUser(Request $request, $displayname)
+//    {
+//        //get all users
+//        //get all emails
+//        //get input data
+//        //return true if given email is in the emails array
+//
+//        $db = array_flatten(User::get(['displayname'])->toArray()) ;
+//        $result =  in_array($displayname, $db);
+//        if($result) {
+//            return Response::json(array('isUnique' => $result), 200);
+//        }
+//        else{
+//            abort('404');
+//        }
+//    }
 }

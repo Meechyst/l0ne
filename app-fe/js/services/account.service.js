@@ -11,25 +11,25 @@
             user: null,
             getProfile: getProfile,
             updateProfile: updateProfile,
-            getCurrentUser: getCurrentUser
+            //getCurrentUser: getCurrentUser
         };
 
         function getProfile() {
-            return $http.get('api/api/me');
+            return $http.get('/api/api/me');
         }
 
         function updateProfile(profileData) {
-            return $http.put('api/api/me', profileData);
+            return $http.put('/api/api/me', profileData);
         }
 
-        function getCurrentUser() {
-            return $http.get('/api/user').then(function (result) {
-                service.user = result.data;
-                return result;
-            });
-        }
-
-        getCurrentUser();
+        //function getCurrentUser() {
+        //    return $http.get('/api/user').then(function (result) {
+        //        service.user = result.data;
+        //        return result;
+        //    });
+        //}
+        //
+        //getCurrentUser();
 
 
         return service;

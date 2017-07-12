@@ -40,7 +40,3 @@ mix.scripts([
 ], 'public/js/app.js').version();
 
 mix.copy('app-fe/js/**/*.html', 'public/templates/');
-
-//mix.browserSync({
-//    proxy: 'localhost:8000'
-//});

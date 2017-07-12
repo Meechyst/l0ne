@@ -5,7 +5,10 @@ use Illuminate\Support\Facades\Validator;
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
 use GuzzleHttp;
+use GuzzleHttp\Client;
+use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Subscriber\Oauth\Oauth1;
+
 use App\User;
 
 
@@ -297,6 +300,7 @@ class AuthController extends Controller {
             }
         }
     }
+
     public function user(Request $request)
     {
         return $request->user();

@@ -38,10 +38,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/user', 'UserController@getUser');
     Route::get('api/me', 'UserController@getUser');
     Route::put('api/me', 'UserController@updateUser');
-    Route::get('api/chech/{displayname}', 'UserController@chechUser');
-
-
-    Route::resource('users', 'UserController');
+//    Route::get('api/chech/{displayname}', 'UserController@chechUser');
 
 });
 

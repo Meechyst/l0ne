@@ -1,24 +1,13 @@
 (function () {
     'use strict';
 
-    routing.$inject = ['$stateProvider', '$urlRouterProvider'];
-
-    //base routing
-    function routing($stateProvider, $urlRouterProvider) {
-
-        //$urlRouterProvider.otherwise('/');
-
-
-    }
-
-    angular.module('l0ne').config(routing);
-
-
-
     //access a unrestangularized element
     restangularConfig.$inject = ['RestangularProvider'];
+
     function restangularConfig(RestangularProvider) {
+
         RestangularProvider.setResponseExtractor(function (response) {
+
             var newResponse = response;
             if (angular.isArray(response)) {
                 angular.forEach(newResponse, function (value, key) {
@@ -34,6 +23,16 @@
 
     angular.module('l0ne').config(restangularConfig);
 
+
+
+
+    api.$inject = ['Restangular'];
+
+    function api(Restangular) {
+        Restangular.setBaseUrl('/api');
+    }
+
+    angular.module('l0ne').run(api);
 
 
 
