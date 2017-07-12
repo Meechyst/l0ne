@@ -105,7 +105,7 @@ class AuthController extends Controller {
         ]);
         $accessToken = json_decode($accessTokenResponse->getBody(), true);
         // Step 2. Retrieve profile information about the current user.
-        $fields = 'id,email,first_name,last_name,link,name';
+        $fields = 'id,email,first_name,last_name,link,name,picture';
         $profileResponse = $client->request('GET', 'https://graph.facebook.com/v2.5/me', [
             'query' => [
                 'access_token' => $accessToken['access_token'],
@@ -127,6 +127,7 @@ class AuthController extends Controller {
             $user->facebook = $profile['id'];
             $user->email = $user->email ?: $profile['email'];
             $user->displayName = $user->displayName ?: $profile['name'];
+            $user->picture = $profile['picture'];
             $user->save();
             return response()->json(['token' => $this->createToken($user)]);
         }

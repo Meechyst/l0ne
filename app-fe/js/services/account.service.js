@@ -10,12 +10,12 @@
         var service = {
             user: null,
             getProfile: getProfile,
-            updateProfile: updateProfile,
+            updateProfile: updateProfile
             //getCurrentUser: getCurrentUser
         };
 
         function getProfile() {
-            return $http.get('/api/api/me');
+            return $http.get('api/api/me');
         }
 
         function updateProfile(profileData) {

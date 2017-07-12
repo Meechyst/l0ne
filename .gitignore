@@ -12,3 +12,4 @@ yarn-error.log
 .env
 !/node_modules/angular-resource/angular-resource.js
 !/node_modules/satellizer/dist/satellizer.js
+/public/js/*

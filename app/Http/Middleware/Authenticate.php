@@ -1,8 +1,9 @@
 <?php namespace App\Http\Middleware;
 use Firebase\JWT\JWT;
-use Illuminate\Support\Facades\Config;
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Support\Facades\Config;
+
 class Authenticate {
     /**
      * The Guard implementation.

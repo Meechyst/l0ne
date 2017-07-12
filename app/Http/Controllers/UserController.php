@@ -25,8 +25,9 @@ class UserController extends Controller
     /**
      * Generate JSON Web Token.
      */
-    protected function createToken($user)
+    protected function createToken(User $user)
     {
+
         $payload = [
             'sub' => $user->id,
             'iat' => time(),
