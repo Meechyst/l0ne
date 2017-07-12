@@ -1,4 +1,6 @@
 <?php namespace App\Http\Controllers;
+
+use GuzzleHttp\Subscriber\Oauth\Oauth1;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Validator;
@@ -7,7 +9,6 @@ use Illuminate\Http\Request;
 use GuzzleHttp;
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Subscriber\Oauth\Oauth1;
 
 use App\User;
 
