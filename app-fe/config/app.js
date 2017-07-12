@@ -13,6 +13,7 @@
             'ngMaterial',
             'restangular',
             'angularMoment',
+            'ngAria',
 
             // Application Modules
             'l0ne.home',
@@ -22,7 +23,8 @@
             'l0ne.register',
             'l0ne.navbar',
             'l0ne.logout',
-            'l0ne.profile'
+            'l0ne.profile',
+            'l0ne.panel'
         ]
     );
 })();

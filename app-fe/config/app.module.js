@@ -9,5 +9,6 @@
     angular.module('l0ne.navbar', []);
     angular.module('l0ne.logout', []);
     angular.module('l0ne.profile', []);
+    angular.module('l0ne.panel', []);
 
 })();

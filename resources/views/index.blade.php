@@ -10,17 +10,24 @@
     <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.jsdelivr.net/animatecss/3.2.0/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
     <link href="{{mix('css/app.css')}}" rel="stylesheet">
     <link href="{{url('css/angular-toastr.css')}}" rel="stylesheet">
+
+
 </head>
 <body>
+
 <div ng-controller="NavbarController" class="navbar navbar-default navbar-static-top">
+
     <div class="navbar-header">
-        <a class="navbar-brand" href="/"><i class="ion-ios7-pulse-strong"></i> Satellizer</a>
+        <a class="navbar-brand" href="/"><i class="ion-ios7-pulse-strong"></i> l0ne</a>
     </div>
     <ul class="nav navbar-nav">
-        <li><a href="/#/">Home</a></li>
-        <li ng-if="isAuthenticated()"><a href="/#/profile">Profile</a></li>
+        <li><a href="/#/">Homepage</a></li>
+        <li ng-if="isAuthenticated()"><a href="/#/profile">Profile Settings</a></li>
+        <li ng-if="isAuthenticated()"><a href="/#/panel">Panel</a></li>
     </ul>
     <ul ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">
         <li><a href="/#/login">Login</a></li>
@@ -30,7 +37,6 @@
         <li><a href="/#/logout">Logout</a></li>
     </ul>
 </div>
-
 <ui-view></ui-view>
 
 <script src="{{mix('js/vendor.js')}}"></script>

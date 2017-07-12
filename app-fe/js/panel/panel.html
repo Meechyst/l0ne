@@ -1,0 +1,31 @@
+<div class="col-md-3 offset">
+    <md-card>
+        <md-card-header>
+            <md-card-avatar>
+                <a href=""><img class="md-user-avatar" ng-src="{{PanelCtrl.user.picture || 'https://placehold.it/100x100'}}"></a>
+            </md-card-avatar>
+            <md-card-header-text>
+                <span class="md-title">{{PanelCtrl.user.displayName}}</span>
+                <span class="md-subhead">{{PanelCtrl.user.email}}</span>
+            </md-card-header-text>
+        </md-card-header>
+    </md-card>
+</div>
+<div class="col-md-6">
+    <md-content layout-padding>
+        <div>
+            <form name="userForm">
+
+
+
+                <md-input-container class="md-block">
+                    <label>Biography</label>
+                    <textarea ng-model="user.biography" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+                </md-input-container>
+
+            </form>
+        </div>
+    </md-content>
+
+</div>
+</div>
